@@ -101,3 +101,53 @@ margin-right: 40px;}
   }
 }
 /* ---------Main----------------- */
+.intro-container{
+  min-width: 320px;
+  max-width: 1440px;
+  min-height: 800px;
+  background: center / cover no-repeat url("../img/main-photo.png");
+  padding-top: 200px;
+
+}
+.intro{
+  padding: 60px 60px;
+  width: 570px;
+  height: 400px;
+  background: white;
+  margin-left: 100px;
+}
+.intro p:first-child {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  color:#BB2528;
+}
+h1{
+  margin: 30px 0;
+  font-size: 56px;
+  font-family: 'Ibarra Real Nova', serif
+}
+.intro-btn a{
+  margin-top: 30px;
+
+  }
+
+.intro-btn a:first-child{
+  display: inline-block;
+  color:white;
+  background:#BB2528;
+  padding: 10px 30px;
+  margin-right: 20px;
+  }
+
+.intro-btn a:last-child{
+  display: inline-block;
+  color:#000; 
+  padding: 10px 30px;
+  border: 2px solid black;
+}
+
+.intro-btn a:hover{
+  margin-top: 30px;
+  color:white;
+  background: #000;
+  }

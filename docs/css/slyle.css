@@ -5,7 +5,8 @@
   box-sizing: border-box;
   font-family:  Fira Sans,sans-serif;
 }
-html{
+body{
+  max-width: 1920px;
   overflow-x: hidden;
 }
 ul, li, a{
@@ -103,7 +104,7 @@ margin-right: 40px;}
 /* ---------Main----------------- */
 .intro-container{
   min-width: 320px;
-  max-width: 1440px;
+  width: 100%;
   min-height: 800px;
   background: center / cover no-repeat url("../img/main-photo.png");
   padding-top: 200px;

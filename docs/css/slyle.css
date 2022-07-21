@@ -1,0 +1,103 @@
+/* -----General styles------------- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  Fira Sans,sans-serif;
+}
+html{
+  overflow-x: hidden;
+}
+ul, li, a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  list-style-type: none;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.underline-hover-effect{
+  display: inline-block;
+  position: relative;
+  padding-bottom: 4px;
+  white-space: nowrap;
+}
+.underline-hover-effect::before{
+content: ""; 
+position: absolute;
+left: 0;
+bottom: 0;
+width: 0;
+height: 2px;
+background: #000;
+transition: width 0.25s ease-in-out;
+}
+.underline-hover-effect:hover::before{
+width: 100%;
+}
+/* --------Header---------- */
+.contact-info{
+  background: #BB2528;
+  height: 45px;
+  color:white;
+  justify-content: space-between;
+  padding: 0 90px;
+  display: none;
+}
+.contact-info a:hover{
+ text-decoration: underline;
+
+}
+.navbar{  
+  padding: 35px 40px;
+  justify-content: space-between;
+}
+.navbar-container{
+  width: 100%;
+  letter-spacing: 4;
+}
+
+.navbar-container li:hover{
+color: #BB2528;}
+.navbar-container li:not(:first-child){
+margin-right: 40px;}
+.navbar-container li a{
+    width: 100%;
+    letter-spacing: 1.5px;
+  }
+
+.logo{
+  /* border: none; */
+  margin-right: auto;
+}
+.social-icons-container{
+  justify-content: space-between;
+  text-align: center;
+  width: 135px;
+  color:#4f4f4f;
+
+}
+
+.social-icons-container li{
+  border: 1px solid #4f4f4f;
+  height: 30px;
+  width: 30px;}
+.social-icons-container li:hover{
+  background: #4f4f4f;
+  color:white;
+  }
+
+
+@media screen and (min-width: 992px) {
+  .contact-info{
+    display: flex;
+  }
+}
+/* ---------Main----------------- */

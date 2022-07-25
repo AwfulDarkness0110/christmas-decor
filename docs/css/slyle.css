@@ -57,50 +57,121 @@ width: 100%;
 
 }
 .navbar{  
+  flex-wrap: wrap;
   padding: 35px 40px;
   justify-content: space-between;
 }
 .navbar-container{
-  width: 100%;
+  width: 80%;
   letter-spacing: 4;
 }
-
+.extra-link{
+  display: none;
+}
 .navbar-container li:hover{
-color: #BB2528;}
+color: #BB2528;
+}
 .navbar-container li:not(:first-child){
-margin-right: 40px;}
+margin-right: 40px;
+}
 .navbar-container li a{
     width: 100%;
     letter-spacing: 1.5px;
   }
+.navbar-container li:first-child{
+   margin-left: auto;
+  }
+.navbar-container li{
+   margin-left: 20px;
+  }
 
-.logo{
-  /* border: none; */
-  margin-right: auto;
-}
 .social-icons-container{
   justify-content: space-between;
   text-align: center;
   width: 135px;
   color:#4f4f4f;
-
+  margin-left: auto;
 }
 
 .social-icons-container li{
   border: 1px solid #4f4f4f;
   height: 30px;
-  width: 30px;}
+  width: 30px;
+margin-right: 10px;
+}
 .social-icons-container li:hover{
   background: #4f4f4f;
   color:white;
   }
 
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .contact-info{
     display: flex;
   }
 }
+/* ---------Hamburger----------------- */
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background: #000;
+  transition: all .3s ease-in-out;
+}
+@media (max-width:768px){
+  .hamburger{
+    display: block;
+  }
+  .navbar-container, .social-icons-container{
+    position: fixed;
+    flex-direction: column;
+    top: 120px;
+    left: -100%;
+    width: 100%;
+    text-align: center;
+    transition: .3s;
+    background: white;
+
+  }
+  .extra-link{
+    display: block;
+  }
+  .social-icons-container{
+    justify-content: center;
+  flex-direction: row;
+  }
+  .navbar-container li:first-child{
+    margin-left: -30px;
+   }
+   .hamburger.active .bar:nth-child(1){
+transform: translateY(8px) rotate(45deg);
+   }
+   .hamburger.active .bar:nth-child(2){
+opacity: 0;
+   }
+   .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+
+   }
+   .navbar-container.active, .social-icons-container.active{
+    left: 0;
+    }
+    .navbar-container li{
+      margin: 16px 0;
+    }
+    .social-icons-container li{
+      margin: 16px 0;
+    }
+   
+}
+
+
+
 /* ---------Main----------------- */
 .intro-container{
   min-width: 320px;

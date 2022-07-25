@@ -9,6 +9,9 @@ body{
   max-width: 1920px;
   overflow-x: hidden;
 }
+body.active{
+  overflow-y: hidden;
+}
 ul, li, a{
   text-decoration: none;
   color: inherit;
@@ -110,10 +113,13 @@ margin-right: 10px;
     display: flex;
   }
 }
-/* ---------Hamburger----------------- */
+/* ---------Hamburger menu----------------- */
 .hamburger{
   display: none;
   cursor: pointer;
+}
+.hamburger:hover .bar{
+background: grey;
 }
 .bar{
   display: block;
@@ -127,19 +133,30 @@ margin-right: 10px;
   .hamburger{
     display: block;
   }
-  .navbar-container, .social-icons-container{
+  .navbar-container{
     position: fixed;
     flex-direction: column;
-    top: 120px;
+    top: 110px;
     left: -100%;
     width: 100%;
     text-align: center;
     transition: .3s;
     background: white;
+    height: 100%;
+  }
+  .social-icons-container{
+    position: fixed;
+    top: 500px;
+    text-align: center;
+    justify-content: center;
+    left: -100%;
+    text-align: center;
+    width: 100%;
 
   }
   .extra-link{
     display: block;
+    color: #BB2528;
   }
   .social-icons-container{
     justify-content: center;
@@ -167,7 +184,7 @@ opacity: 0;
       .contact-info{
       display: none;
     }
-   
+  
 }
 
 
@@ -180,10 +197,11 @@ opacity: 0;
   padding-top: 200px;
 
 }
+
 .intro{
   padding: 60px 60px;
-  width: 570px;
-  height: 400px;
+  width: 50%;
+  height: 90vh;
   background: white;
   margin-left: 100px;
 }
@@ -221,4 +239,19 @@ h1{
   margin-top: 30px;
   color:white;
   background: #000;
+  }
+  @media (max-width: 768px) {
+    .intro-container{
+    background: center / cover no-repeat url("../img/intro_1200.png");
+  }
+  .intro{
+    width: 80%;
+    height: 90vh;
+    margin: 0 auto;
+  }
+  }
+  @media (min-width: 1920px) {
+    .intro-container{
+    background: center / cover no-repeat url("../img/intro_1920.png");
+  }
   }

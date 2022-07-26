@@ -312,7 +312,7 @@ h1{
   }
   .benefit{
     width: 50%;
-    padding: 0;
+    padding: 40px 0 0;
     margin: 0;
 
   }
@@ -328,7 +328,56 @@ h1{
   }
   .benefit{
     width: 100%;
-    padding: 0;
+    padding: 40px 0 0;
     margin: 0;
+  }
+}
+/* ------------Sales section------------- */
+.sales-container{
+  justify-content: space-between;
+}
+.sale:nth-child(1){
+  background: right / cover no-repeat url('../img/garland.png');
+}
+.sale:nth-child(2){
+  background: right / cover no-repeat url('../img/baubles.png');
+}
+.sale{
+  padding: 40px;
+  color: white;
+  width: 49%;
+  height: 328px;
+}
+.sale>*{
+margin-bottom: 30px;
+}
+.sale p:first-child {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+}
+.sale__title{
+  font-size: 36px;
+}
+.sale__btn{
+  border: 1px solid white;
+  padding: 10px 30px;
+}
+.sale__btn:hover{
+  background: #FFF;
+color: #000;
+}
+
+@media (max-width: 768px) {
+  .sales-container{
+    flex-wrap: wrap;
+  }
+  .sale{
+    padding: 40px 20px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .sale__title{
+    font-size: 38px;
+    /* height: auto; */
   }
 }

@@ -27,6 +27,10 @@ ul, li, a{
   justify-content: center;
   align-items:center;
 }
+.container{
+  width: 90vw;
+  margin: 0 auto;
+}
 .underline-hover-effect{
   display: inline-block;
   position: relative;
@@ -156,8 +160,17 @@ background: grey;
   }
   .extra-link{
     display: block;
+  }
+  .navbar-container .extra-link:nth-child(6){
+    color: grey;
+  }
+  .navbar-container .extra-link:nth-child(7){
     color: #BB2528;
   }
+  .navbar-container .extra-link:nth-child(8){
+    color: #BB2528;
+  }
+  
   .social-icons-container{
     justify-content: center;
   flex-direction: row;
@@ -199,9 +212,9 @@ opacity: 0;
 }
 
 .intro{
-  padding: 60px 60px;
+  padding: 60px;
   width: 50%;
-  height: 90vh;
+  /* height: 90vh; */
   background: white;
   margin-left: 100px;
 }
@@ -244,10 +257,19 @@ h1{
     .intro-container{
     background: center / cover no-repeat url("../img/intro_1200.png");
   }
+  h1{
+    font-size: 40px;
+  }
   .intro{
-    width: 80%;
-    height: 90vh;
-    margin: 0 auto;
+    padding: 20px;
+     width: 70%;
+     margin: 0 auto;
+  }
+  .intro-container p{
+    line-height: 2;
+  }
+  .intro-btn{
+    flex-wrap: wrap;
   }
   }
   @media (min-width: 1920px) {
@@ -255,3 +277,58 @@ h1{
     background: center / cover no-repeat url("../img/intro_1920.png");
   }
   }
+/* ----------Benefits section--------- */
+.benefits-container{
+  justify-content: space-between;
+}
+.benefit{
+  width: 25%;
+  padding: 100px 20px;
+}
+.benefit>*{
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.benefit__icon{
+  background:#f9f4ee;
+  border-radius: 50%;
+  padding: 15px;
+  width: 70px;
+  height: 70px;
+}
+.benefit__divider{
+  height: 3px;
+  width: 15%;
+  background-color: #bb2528;
+}
+.benefit__description{
+  color:grey;
+}
+@media (max-width:991px){
+  .container{
+    width: 80vw;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .benefit{
+    width: 50%;
+    padding: 0;
+    margin: 0;
+
+  }
+  .benefits-container{
+    flex-wrap: wrap;
+  }
+}
+@media (max-width:768px){
+  .container{
+    width: 80vw;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .benefit{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}

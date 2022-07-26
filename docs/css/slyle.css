@@ -9,6 +9,9 @@ body{
   max-width: 1920px;
   overflow-x: hidden;
 }
+.break{
+  word-break: break-all;
+}
 body.active{
   overflow-y: hidden;
 }
@@ -30,6 +33,10 @@ ul, li, a{
 .container{
   width: 90vw;
   margin: 0 auto;
+}
+h2{
+  font-family: 'Ibarra Real Nova', serif
+
 }
 .underline-hover-effect{
   display: inline-block;
@@ -296,7 +303,7 @@ h1{
   width: 70px;
   height: 70px;
 }
-.benefit__divider{
+.benefit__divider, .divider{
   height: 3px;
   width: 15%;
   background-color: #bb2528;
@@ -359,6 +366,7 @@ margin-bottom: 30px;
   font-size: 36px;
 }
 .sale__btn{
+  margin-top: 20px;
   border: 1px solid white;
   padding: 10px 30px;
 }
@@ -378,6 +386,89 @@ color: #000;
   }
   .sale__title{
     font-size: 38px;
-    /* height: auto; */
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------Footer---------- */
+.footer-container{
+  width: 96vw; 
+   }
+footer{
+  margin-top: 40px;
+  padding: 80px 0 60px;
+  color:#fff;
+  background: #232323;
+  line-height: 1.5;
+}
+.footer__logo{
+  display: block;
+  margin-bottom: 20px;
+}
+.footer__card{
+  display: flex;
+  flex-direction: column;
+ padding: 0 20px;
+  width: 25%;
+  align-self: flex-start;
+}
+.footer__social{
+  text-align: center;
+}
+
+.footer__social li{
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.footer-link{
+  border:none !important;
+  color:white;
+  background:#bb2528 ;
+}
+.footer-link:hover{
+  background: #cf6466 !important;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+.footer__card .divider{
+  margin: 20px 0;
+}
+
+@media (max-width:768px){
+  .footer-container{
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+   }
+  .footer-container .divider{
+margin: 0 auto 20px;
+  }
+  .footer-container h2{
+margin: 30px auto 5px;
+  }
+  .footer__card{
+    width: 100%;
+  }
+  .footer__card a{
+    word-break: break-all; 
+  }
+  .footer__social{
+justify-content: center;
+ }
 }

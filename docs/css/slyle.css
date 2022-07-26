@@ -374,7 +374,18 @@ margin-bottom: 30px;
   background: #FFF;
 color: #000;
 }
-
+.fixed-bg{
+  margin-top: 40px;
+  padding: 80px 20px;
+  height: 100vh;
+  background-image: url('../img/fixed_1200.png');
+  background-attachment: fixed;
+}
+.fixed-bg h2{
+    margin: 30px 0;
+    font-size: 56px;
+    font-family: 'Ibarra Real Nova', serif
+}
 @media (max-width: 768px) {
   .sales-container{
     flex-wrap: wrap;
@@ -387,7 +398,14 @@ color: #000;
   .sale__title{
     font-size: 38px;
   }
+  .fixed-bg h2{
+    font-size: 40px;
 }
+.fixed-bg {
+  padding: 40px 20px;
+}
+}
+
 
 
 

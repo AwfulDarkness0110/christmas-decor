@@ -23,3 +23,8 @@ document.querySelectorAll('.nav-link').forEach((l) =>
 // -------------Turn on tabs---------
 tabs();
 // ----------------
+generateShop(shop);
+generateShop(interior);
+generateShop(wreaths);
+generateShop(christmasBalls);
+generateShop(stockings);

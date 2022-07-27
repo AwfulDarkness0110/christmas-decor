@@ -7,15 +7,15 @@ function tabs() {
       let currentBtn = item;
       let tabId = currentBtn.getAttribute('data-tab');
       let currentTab = document.querySelector(tabId);
-      if (!currentBtn.classList.contains('active')) {
+      if (!currentBtn.classList.contains('open')) {
         tabsBtn.forEach(function (item) {
-          item.classList.remove('active');
+          item.classList.remove('open');
         });
         tabsItems.forEach(function (item) {
-          item.classList.remove('active');
+          item.classList.remove('open');
         });
-        currentBtn.classList.add('active');
-        currentTab.classList.add('active');
+        currentBtn.classList.add('open');
+        currentTab.classList.add('open');
       }
     });
   });

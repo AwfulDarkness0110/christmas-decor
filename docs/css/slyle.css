@@ -216,7 +216,6 @@ h2 {
 .intro {
   padding: 60px;
   width: 50%;
-  /* height: 90vh; */
   background: white;
   margin-left: 100px;
 }
@@ -425,7 +424,7 @@ h1 {
   height: 226px;
 }
 .product__card {
-  margin-top: 20px;
+  margin: 20px 10px;
   width: 240px;
   display: flex;
   flex-direction: column;
@@ -436,13 +435,16 @@ h1 {
 .tabs__item {
   display: none;
 }
-.active {
+.open {
   display: flex;
 }
 @media (max-width: 1067px) {
   .tabs__item,
   .shop {
-    justify-content: space-around;
+    justify-content: center;
+  }
+  .product__card {
+    margin: 20px 5px;
   }
 }
 /* -----clearing all default styles for btn---- */

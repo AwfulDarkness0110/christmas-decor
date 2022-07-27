@@ -58,6 +58,18 @@ h2 {
 .underline-hover-effect:hover::before {
   width: 100%;
 }
+/* -----clearing all default styles for btn---- */
+.tabs__nav-btn,
+.product__btn {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
 /* --------Header---------- */
 .contact-info {
   background: #bb2528;
@@ -65,7 +77,6 @@ h2 {
   color: white;
   justify-content: space-between;
   padding: 0 90px;
-  /* display: none; */
 }
 .contact-info a:hover {
   text-decoration: underline;
@@ -367,14 +378,25 @@ h1 {
   background: #fff;
   color: #000;
 }
-.fixed-bg {
+/* ----------Special offer------------- */
+.fixed__bg {
   margin-top: 40px;
   padding: 80px 20px;
-  height: 100vh;
   background-image: url('../img/fixed_1200.png');
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.fixed-bg h2 {
+.fixed__container {
+  width: 80vw;
+}
+.fixed__content {
+  background: white;
+  width: 60%;
+  padding: 40px;
+}
+.fixed__bg h2 {
   margin: 30px 0;
   font-size: 56px;
   font-family: 'Ibarra Real Nova', serif;
@@ -391,11 +413,17 @@ h1 {
   .sale__title {
     font-size: 38px;
   }
-  .fixed-bg h2 {
+  .fixed__bg h2 {
     font-size: 40px;
   }
-  .fixed-bg {
+  .fixed__bg {
     padding: 40px 20px;
+  }
+  .fixed__container {
+    width: 90vw;
+  }
+  .fixed__content {
+    width: 90vw;
   }
 }
 /* ------------Tabs----------------- */
@@ -425,12 +453,32 @@ h1 {
 }
 .product__card {
   margin: 20px 10px;
-  width: 240px;
+  padding-top: 30px;
+  min-width: 240px;
+  width: 23%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.product__card > * {
+  margin-bottom: 30px;
+}
+.product__name {
+  color: #4f4f4f;
+  font-weight: 400;
+}
+.product__price {
+  color: #bb2528;
+  font-weight: 800;
+}
+.product__btn {
+  border: 2px solid #bb2528;
+  padding: 10px 20px;
+  color: #bb2528;
+  font-size: 12px;
+  font-weight: 600;
 }
 .tabs__item {
   display: none;
@@ -438,27 +486,25 @@ h1 {
 .open {
   display: flex;
 }
-@media (max-width: 1067px) {
+@media (max-width: 1156px) {
   .tabs__item,
   .shop {
-    justify-content: center;
+    justify-content: space-between;
+    width: 80vw;
   }
   .product__card {
-    margin: 20px 5px;
+    width: 46%;
   }
 }
-/* -----clearing all default styles for btn---- */
-.tabs__nav-btn,
-.product__btn {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
+@media (max-width: 768px) {
+  .tabs__item,
+  .shop {
+    width: 80vw;
+  }
+  .product__card {
+    width: 100%;
+  }
 }
-
 /* -----------Contact us ------------ */
 .contact-container {
   margin: 40px auto;

@@ -155,7 +155,7 @@ let generateShop = (section) => {
               <div class="product__card">
               <img class="product__img" src="${product.img}" alt="product-photo" />
               <h3 class="product__name">${product.name}</h3>
-              <p class="product__price">${product.price}</p>
+              <p class="product__price">$${product.price},00</p>
               <button class="product__btn" type="button">Add to cart</button>
             </div>
 `;

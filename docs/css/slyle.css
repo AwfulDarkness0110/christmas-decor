@@ -441,7 +441,7 @@ h1 {
   display: flex;
   justify-content: left;
   width: 80vw;
-  color: grey;
+  color: rgb(75, 75, 75);
   margin-left: 10px;
   flex-wrap: wrap;
 }
@@ -465,7 +465,7 @@ h1 {
   display: block;
 }
 .tabs__nav-btn:hover {
-  color: grey;
+  color: rgb(75, 75, 75);
 }
 .tabs__item {
   margin: 0 auto;
@@ -594,7 +594,66 @@ h1 {
     font-size: 30px;
   }
 }
-
+/* ----------------Google map---------- */
+.google__map {
+  margin: 0 auto;
+  width: 100vw;
+  position: relative;
+}
+iframe {
+  width: 100%;
+}
+.google__card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+  right: 5%;
+  background: white;
+  text-align: center;
+  padding: 20px 30px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  color: #4f4f4f;
+}
+.google__card h2 {
+  font-size: 40px;
+  color: black;
+}
+.google__card p:first-child {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  color: #bb2528;
+}
+.google__card a:hover {
+  text-decoration: underline;
+}
+.google__card img {
+  padding-left: 60px;
+}
+.google__card > * {
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .google__map {
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+  }
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+  .google__card {
+    left: 5%;
+    top: 60%;
+    width: 90%;
+    max-width: 350px;
+    max-height: 358px;
+  }
+}
 /* ------------------Footer---------- */
 .footer-container {
   width: 96vw;

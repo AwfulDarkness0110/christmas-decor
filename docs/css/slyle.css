@@ -77,6 +77,7 @@ h2 {
   color: white;
   justify-content: space-between;
   padding: 0 90px;
+  transition: all 0.3s linear;
 }
 .contact-info a:hover {
   text-decoration: underline;
@@ -93,6 +94,10 @@ h2 {
 .extra-link {
   display: none;
 }
+.navbar-container li {
+  margin-left: 20px;
+  transition: all 0.3s linear;
+}
 .navbar-container li:hover {
   color: #bb2528;
 }
@@ -105,9 +110,6 @@ h2 {
 }
 .navbar-container li:first-child {
   margin-left: auto;
-}
-.navbar-container li {
-  margin-left: 20px;
 }
 
 .social-icons-container {
@@ -123,6 +125,7 @@ h2 {
   height: 30px;
   width: 30px;
   margin-right: 10px;
+  transition: all 0.3s linear;
 }
 .social-icons-container li:hover {
   background: #4f4f4f;
@@ -242,6 +245,7 @@ h1 {
 }
 .intro-btn a {
   margin-top: 30px;
+  transition: all 0.3s linear;
 }
 
 .intro-btn a:first-child {
@@ -373,6 +377,7 @@ h1 {
   margin-top: 20px;
   border: 1px solid white;
   padding: 10px 30px;
+  transition: all 0.3s linear;
 }
 .sale__btn:hover {
   background: #fff;
@@ -435,11 +440,36 @@ h1 {
 .tabs__nav {
   display: flex;
   justify-content: left;
+  width: 80vw;
+  color: grey;
+  margin-left: 10px;
+  flex-wrap: wrap;
 }
 .tabs__nav-btn {
-  margin-right: 50px;
+  transition: all 0.3s linear;
+  color: darkgrey;
+  position: relative;
+  padding: 15px 20px;
 }
-
+.tabs__nav-btn:after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #bb2528;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+.tabs__nav-btn.open:after {
+  display: block;
+}
+.tabs__nav-btn:hover {
+  color: grey;
+}
+.tabs__item {
+  margin: 0 auto;
+}
 /* -----------Product card------- */
 .tabs__item,
 .shop {
@@ -450,6 +480,10 @@ h1 {
 .product__img {
   width: 226px;
   height: 226px;
+  transition: all 0.5s ease-in-out;
+}
+.product__img:hover {
+  transform: scale(1.2);
 }
 .product__card {
   margin: 20px 10px;
@@ -479,12 +513,18 @@ h1 {
   color: #bb2528;
   font-size: 12px;
   font-weight: 600;
+  transition: all 0.3s linear;
+}
+.product__btn:hover {
+  background: #bb2528;
+  color: white;
 }
 .tabs__item {
   display: none;
 }
 .open {
   display: flex;
+  color: grey;
 }
 @media (max-width: 1156px) {
   .tabs__item,
@@ -529,6 +569,7 @@ h1 {
   border: 1px solid white;
   padding: 20px 40px;
   font-weight: 600;
+  transition: all 0.3s linear;
 }
 .contact-us h2 {
   font-size: 46px;
@@ -589,6 +630,7 @@ footer {
   border: none !important;
   color: white;
   background: #bb2528;
+  transition: all 0.3s linear;
 }
 .footer-link:hover {
   background: #cf6466 !important;

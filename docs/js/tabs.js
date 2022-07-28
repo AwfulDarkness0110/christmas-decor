@@ -16,6 +16,7 @@ function tabs() {
         });
         currentBtn.classList.add('open');
         currentTab.classList.add('open');
+        console.log(currentBtn);
       }
     });
   });

@@ -321,7 +321,7 @@ h1 {
   background-color: #bb2528;
 }
 .benefit__description {
-  color: grey;
+  color: #4f4f4f;
 }
 @media (max-width: 991px) {
   .container {
@@ -412,7 +412,7 @@ h1 {
   margin-bottom: 10px;
 }
 .section-description__info {
-  color: grey;
+  color: #4f4f4f;
   margin-bottom: 20px;
 }
 /* ----------Special offer------------- */
@@ -624,6 +624,49 @@ h1 {
   }
   .contact-us h2 {
     font-size: 30px;
+  }
+}
+/* ---------------Accordion menu------------- */
+.accordion__menu {
+  font-size: 18px;
+  color: #4f4f4f;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+.accordion__item {
+  width: 48%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #c7c3c3;
+  padding: 10px 0;
+  height: 100%;
+}
+.accordion__question {
+  display: flex;
+  align-items: center;
+}
+.accordion__question::after {
+  content: '+';
+  font-size: 30px;
+  margin-left: auto;
+}
+.open-answer::after {
+  content: '-';
+  font-size: 30px;
+}
+.accordion__answer {
+  padding-top: 10px;
+  color: grey;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .accordion__item {
+    width: 100%;
   }
 }
 /* ----------------Google map---------- */

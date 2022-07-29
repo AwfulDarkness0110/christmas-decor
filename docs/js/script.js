@@ -1,6 +1,7 @@
 'use strict';
 import tabs from '../js/tabs.js';
 import generateShop from '../js/generate-shop.js';
+import accordion from '../js/accordion';
 // --------Hamburger menu------------
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.navbar-container');
@@ -20,11 +21,13 @@ document.querySelectorAll('.nav-link').forEach((l) =>
     body.classList.remove('active');
   })
 );
-// -------------Turn on tabs---------
+// ------------Turn on tabs---------
 tabs();
-// ----------------
+// ------------Generate all product cards on website------
 generateShop(shop);
 generateShop(interior);
 generateShop(wreaths);
 generateShop(christmasBalls);
 generateShop(stockings);
+// ------------Turn on accordion menu----------
+accordion();

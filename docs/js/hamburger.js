@@ -8,14 +8,14 @@ function hamburgerMenu() {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
     socialMenu.classList.toggle('active');
-    body.classList.toggle('active');
+    body.classList.toggle('stop-scroll');
   });
   document.querySelectorAll('.nav-link').forEach((l) =>
     l.addEventListener('click', () => {
       hamburger.classList.remove('active');
       navMenu.classList.remove('active');
       socialMenu.classList.remove('active');
-      body.classList.remove('active');
+      body.classList.remove('stop-scroll');
     })
   );
 }

@@ -12,7 +12,7 @@ body {
 .break {
   word-break: break-all;
 }
-body.active {
+body.stop-scroll {
   overflow-y: hidden;
 }
 ul,

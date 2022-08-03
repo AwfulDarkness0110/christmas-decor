@@ -9,9 +9,5 @@ hamburgerMenu();
 tabs();
 // ------------Generate all product cards on website------
 generateShop(shop);
-generateShop(interior);
-generateShop(wreaths);
-generateShop(christmasBalls);
-generateShop(stockings);
 // ------------Turn on accordion menu----------
 accordion();

@@ -13,6 +13,4 @@ function accordion() {
     });
   });
 }
-accordion();
-
 export default accordion;

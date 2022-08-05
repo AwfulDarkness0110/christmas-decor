@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: Fira Sans, sans-serif;
 }
+
 body {
   max-width: 1440px;
   overflow-x: hidden;
@@ -61,6 +62,9 @@ h2 {
 .shadow {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
 }
+.d-none {
+  display: none;
+}
 /* -----clearing all default styles for btn---- */
 .tabs__nav-btn,
 .product__btn {
@@ -72,7 +76,31 @@ h2 {
   cursor: pointer;
   outline: inherit;
 }
-
+input[type='number'] {
+  padding-left: 5px;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid darkgrey;
+}
+input:focus {
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: block;
+}
+input[type='number']::-webkit-inner-spin-button {
+  opacity: 1;
+}
+input[type='number']::-webkit-inner-spin-button {
+  width: 14px;
+  height: 20px;
+  padding: 4px;
+  right: 4px;
+  border-radius: 28px;
+}
+input[type='number']:hover::-webkit-inner-spin-button {
+}
 /* --------Header---------- */
 .contact-info {
   background: #bb2528;
@@ -538,6 +566,9 @@ h1 {
   color: #bb2528;
   font-weight: 800;
 }
+.product__count {
+  display: none;
+}
 .product__btn {
   border: 2px solid #bb2528;
   padding: 10px 20px;
@@ -797,7 +828,7 @@ iframe {
     width: 100vw;
   }
 }
- 
+
 /* ----------------Testimonials slider------- */
 .testimonials__container {
   width: 90vw;
@@ -970,6 +1001,139 @@ iframe {
   width: 100%;
   height: 100%;
 }
+/* --------------Shopping cart--------- */
+.wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: grey;
+  opacity: 0.6;
+  z-index: 1;
+}
+.shopping__container {
+  /* border: 2px solid green; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: white;
+  z-index: 45 !important;
+  opacity: 1 !important;
+}
+
+.shopping__cart {
+  font-size: 16px;
+  /* border: 1px solid green; */
+  color: #4f4f4f;
+}
+
+.shopping__row {
+  text-align: center;
+  padding: 0 5px;
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 20px;
+  border-bottom: 1px solid darkgrey;
+}
+.shopping__title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+.shopping__title::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 0;
+  background: center / cover no-repeat url('/docs/img/cross-svgrepo-com.svg');
+  pointer-events: auto;
+}
+.shopping__img {
+  width: 50px;
+  height: 50px;
+}
+.shopping__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shopping__name {
+  padding: 0 5px;
+  text-align: left;
+}
+
+.shopping__count {
+  width: 60px;
+  height: 40px;
+}
+
+.shopping__price {
+}
+
+.shopping__remove {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.shopping__remove img {
+  width: 100%;
+  height: 100%;
+}
+.shopping__message {
+  display: none;
+  margin-top: auto;
+}
+.shopping__summary {
+  display: flex;
+  justify-content: flex-end;
+  font-style: 22px;
+  font-weight: 600;
+}
+.shopping__total {
+}
+.purchase__icon {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 120px;
+  right: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  background: #fff;
+}
+.purchase__count {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -12px;
+  right: -6px;
+  border-radius: 50%;
+  background: #bb2528;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.purchase__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* ------------------Footer---------- */
 .footer-container {
   width: 96vw;

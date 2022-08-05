@@ -750,6 +750,7 @@
         </div>
       </div>
     </main>
+
     <footer>
       <div class="container footer-container flex">
         <div class="footer__card">
@@ -824,6 +825,31 @@
         </div>
       </div>
     </footer>
+    <div class="shopping__container d-none">
+      <h2 class="shopping__title">Shopping cart</h2>
+      <div class="shopping__cart"></div>
+      <p class="shopping__message">
+        Shopping cart is empty <br />
+        Continue shopping to add product to your cart
+      </p>
+      <p class="shopping__summary">
+        Total: <span class="shopping__total">0</span>
+      </p>
+      <!-- <div class="shopping__row">
+          <div class="shopping__img">img</div>
+          <div class="shopping__name">name</div>
+          <input class="shopping__count" type="number" value="0" />
+          <div class="shopping__count">0</div>
+          <div class="shopping__price">10</div>
+          <div class="shopping__remove">remove</div>
+        </div> -->
+    </div>
+    <div class="wrapper d-none"></div>
+    <div class="purchase__icon d-none">
+      <img src="img/bag-svgrepo-com.svg" alt="Basket" />
+      <div class="purchase__count">0</div>
+    </div>
+
     <script
       type="module"
       src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -832,10 +858,11 @@
     <script type="module" src="js/summary_slider.js"></script>
     <script type="module" src="js/autoplay_circular_slider.js"></script>
     <script type="module" src="js/accordion.js"></script>
-    <script type="module" src="js/generate-shop.js"></script>
+    <script type="module" src="js/generate-shop.js" async></script>
     <script type="module" src="js/hamburger.js"></script>
     <script type="module" src="js/tabs.js"></script>
     <script type="module" src="js/testomonials-slider.js"></script>
+    <script type="module" src="js/shopping_cart.js" async></script>
     <script type="module" src="js/script.js"></script>
   </body>
 </html>

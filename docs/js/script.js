@@ -11,3 +11,4 @@ tabs();
 generateShop(shop);
 // ------------Turn on accordion menu----------
 accordion();
+//

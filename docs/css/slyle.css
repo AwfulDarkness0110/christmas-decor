@@ -99,8 +99,6 @@ input[type='number']::-webkit-inner-spin-button {
   right: 4px;
   border-radius: 28px;
 }
-input[type='number']:hover::-webkit-inner-spin-button {
-}
 /* --------Header---------- */
 .contact-info {
   background: #bb2528;
@@ -1013,7 +1011,6 @@ iframe {
   z-index: 1;
 }
 .shopping__container {
-  /* border: 2px solid green; */
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1031,7 +1028,7 @@ iframe {
 }
 
 .shopping__row {
-  text-align: center;
+  text-align: left;
   padding: 0 5px;
   width: 50vw;
   display: flex;
@@ -1040,7 +1037,7 @@ iframe {
   align-items: center;
   margin: 10px 0;
   display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr 1fr 20px;
+  grid-template-columns: 0.5fr 1.5fr 0.5fr 1fr 20px;
   border-bottom: 1px solid darkgrey;
 }
 .shopping__title {
@@ -1048,6 +1045,7 @@ iframe {
   display: flex;
   align-items: center;
   pointer-events: none;
+  margin-bottom: 30px;
 }
 .shopping__title::after {
   content: '';
@@ -1078,8 +1076,8 @@ iframe {
   height: 40px;
 }
 
-.shopping__price {
-}
+/* .shopping__price {
+} */
 
 .shopping__remove {
   width: 20px;
@@ -1095,6 +1093,12 @@ iframe {
 .shopping__message {
   display: none;
   margin-top: auto;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #4f4f4f;
+  width: 40vw;
+  height: 20vh;
 }
 .shopping__summary {
   display: flex;
@@ -1103,6 +1107,7 @@ iframe {
   font-weight: 600;
 }
 .shopping__total {
+  padding-left: 10px;
 }
 .purchase__icon {
   width: 60px;
@@ -1111,9 +1116,40 @@ iframe {
   top: 120px;
   right: 50px;
   border-radius: 50%;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
-  padding: 10px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+  padding: 15px;
   background: #fff;
+}
+.jumping {
+  animation: jumping 500ms ease-in-out forwards;
+}
+
+@keyframes jumping {
+  0% {
+    /* width: 60px;
+    height: 60px; */
+    transform: scale(1);
+  }
+  50% {
+    /* width: 60px;
+    height: 60px; */
+    transform: scale(1.2);
+  }
+  51% {
+    /* width: 60px;
+    height: 60px; */
+    transform: scale(1);
+  }
+  98% {
+    /* width: 20px;
+    height: 20px; */
+    transform: scale(1.2);
+  }
+  100% {
+    /* width: 20px;
+    height: 20px; */
+    transform: scale(1);
+  }
 }
 .purchase__count {
   width: 30px;
@@ -1133,7 +1169,11 @@ iframe {
   height: 100%;
   object-fit: cover;
 }
-
+@media (max-width: 768px) {
+  .shopping__row {
+    width: 80vw;
+  }
+}
 /* ------------------Footer---------- */
 .footer-container {
   width: 96vw;

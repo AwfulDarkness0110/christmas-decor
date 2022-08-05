@@ -173,11 +173,15 @@ let generateShop = (section) => {
       if (section.id == product.section) {
         return `
               <div id="product__id-${product.id}" class="product__card">
-              <img class="product__img" src="${product.img}" alt="product-photo" />
+              <img class="product__img" src="${
+                product.img
+              }" alt="product-photo" />
               <h3 class="product__name">${product.name}</h3>
-              <p class="product__price">$${product.price},00</p>
+              <p class="product__price">$${product.price.toFixed(2)}</p>
               <button class="product__btn" type="button">Add to cart</button>
-              <input class="product__count" type="number" value="${product.count}" min="0">
+              <input class="product__count" type="number" value="${
+                product.count
+              }" min="0">
             </div>
 `;
       }

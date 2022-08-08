@@ -48,24 +48,32 @@
         </ul>
       </div>
       <nav class="navbar flex">
-        <a class="logo" href="#"
+        <a class="logo" href="#about"
           ><img width="96" height="auto" src="img/logo.svg" alt="logo"
         /></a>
         <ul class="navbar-container flex">
           <li>
-            <a class="underline-hover-effect nav-link" href="#">Bestsellers</a>
+            <a class="underline-hover-effect nav-link" href="#bestsellers"
+              >Bestsellers</a
+            >
           </li>
           <li>
-            <a class="underline-hover-effect nav-link" href="#">About us</a>
+            <a class="underline-hover-effect nav-link" href="#about"
+              >About us</a
+            >
           </li>
           <li>
-            <a class="underline-hover-effect nav-link" href="#">Decorations</a>
+            <a class="underline-hover-effect nav-link" href="#decorations"
+              >Decorations</a
+            >
           </li>
           <li>
             <a class="underline-hover-effect nav-link" href="#faq">FAQ</a>
           </li>
           <li>
-            <a class="underline-hover-effect nav-link" href="#">Contacts</a>
+            <a class="underline-hover-effect nav-link" href="#contacts"
+              >Contacts</a
+            >
           </li>
           <li class="extra-link">Open 8 am - 8 pm</li>
           <li class="extra-link">
@@ -79,13 +87,19 @@
         </ul>
         <ul class="social-icons-container flex">
           <li class="center">
-            <a href="#"><i class="fab fa-facebook-f nav-link"></i></a>
+            <a href="https://www.facebook.com/"
+              ><i class="fab fa-facebook-f nav-link"></i
+            ></a>
           </li>
           <li class="center">
-            <a href="#"><i class="bi bi-instagram nav-link"></i></a>
+            <a href="https://www.instagram.com/"
+              ><i class="bi bi-instagram nav-link"></i
+            ></a>
           </li>
           <li class="center">
-            <a href="#"><i class="bi bi-youtube nav-link"></i></a>
+            <a href="https://www.youtube.com/"
+              ><i class="bi bi-youtube nav-link"></i
+            ></a>
           </li>
         </ul>
         <div class="hamburger">
@@ -105,8 +119,8 @@
           </div>
           <p>We're all about Christmas decoration since 1998.</p>
           <div class="intro-btn flex">
-            <a href="#">Shop</a>
-            <a href="#">Learn more</a>
+            <a href="#decorations">Shop</a>
+            <a href="#about">Learn more</a>
           </div>
         </div>
       </div>
@@ -383,7 +397,7 @@
             All kinds of Tinsel <br />
             Garlands.
           </h2>
-          <a href="#" class="sale__btn">Buy now →</a>
+          <a href="#decorations" class="sale__btn">Buy now →</a>
         </div>
         <div class="sale">
           <p class="sale__description">- 25% off</p>
@@ -391,10 +405,10 @@
             All Glass Christmas <br />
             baubles.
           </h2>
-          <a href="#" class="sale__btn">Buy now →</a>
+          <a href="#decorations" class="sale__btn">Buy now →</a>
         </div>
       </div>
-      <div class="container section-description__container">
+      <div id="bestsellers" class="container section-description__container">
         <p class="section-description__subtitle">Best choice</p>
         <h2 class="section-description__title">Bestsellers.</h2>
         <img
@@ -412,7 +426,7 @@
         <div class="about__img">
           <img src="img/brands_slider/6.png" alt="decorated-room" />
         </div>
-        <div class="about__content">
+        <div id="about" class="about__content">
           <div class="section-description__container">
             <p class="section-description__subtitle">About Us</p>
             <h2 class="section-description__title">
@@ -567,13 +581,13 @@
               until December, 22.
             </p>
             <div class="intro-btn flex">
-              <a class="shadow" href="#">Shop now</a>
-              <a href="#">Contact Us</a>
+              <a class="shadow" href="#decorations">Shop now</a>
+              <a href="#contacts">Contact Us</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="container section-description__container">
+      <div id="decorations" class="container section-description__container">
         <p class="section-description__subtitle">Shop</p>
         <h2 class="section-description__title">Decorations.</h2>
         <img
@@ -617,7 +631,7 @@
             Call Us at <a href="tel:+12345678900">+1 (234) 567 89 00</a>
           </h2>
           <div class="flex">
-            <a class="contact__btn" href="#">Contact Us → </a>
+            <a class="contact__btn" href="#contacts">Contact Us → </a>
           </div>
         </div>
       </div>
@@ -710,7 +724,7 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <div class="google__card">
+        <div id="contacts" class="google__card">
           <p>Contact Us</p>
           <h2>Contacts.</h2>
           <div>
@@ -754,7 +768,7 @@
     <footer>
       <div class="container footer-container flex">
         <div class="footer__card">
-          <a class="logo footer__logo" href="#"
+          <a class="logo footer__logo" href="#about"
             ><img width="96" height="auto" src="img/logo-footer.svg" alt="logo"
           /></a>
           <p>
@@ -767,11 +781,11 @@
           <h2>Navigation.</h2>
           <div class="divider"></div>
           <ul>
-            <li><a class="nav-link" href="#">Bestsellers</a></li>
-            <li><a class="nav-link" href="#">About us</a></li>
-            <li><a class="nav-link" href="#">Decorations</a></li>
+            <li><a class="nav-link" href="#bestsellers">Bestsellers</a></li>
+            <li><a class="nav-link" href="#about">About us</a></li>
+            <li><a class="nav-link" href="#decorations">Decorations</a></li>
             <li><a class="nav-link" href="#faq">FAQ</a></li>
-            <li><a class="nav-link" href="#">Contacts</a></li>
+            <li><a class="nav-link" href="#contacts">Contacts</a></li>
           </ul>
         </div>
         <div class="footer__card">
@@ -813,13 +827,19 @@
           <br />
           <ul class="flex footer__social">
             <li class="center footer-link">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.facebook.com/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
             </li>
             <li class="center footer-link">
-              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.instagram.com/"
+                ><i class="bi bi-instagram"></i
+              ></a>
             </li>
             <li class="center footer-link">
-              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="https://www.youtube.com/"
+                ><i class="bi bi-youtube"></i
+              ></a>
             </li>
           </ul>
         </div>

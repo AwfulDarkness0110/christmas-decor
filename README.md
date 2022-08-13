@@ -1,5 +1,5 @@
 # Christmas decor
-[go to web site](https://nvyrsta.github.io/christmas-decor/)
+[go to web site](https://nvyrsta.github.io/christmas-decor/)<br/>
 *e-commerce website*<br/>
 `HTML` `CSS` `JavaScript`
 
